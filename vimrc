@@ -9,10 +9,17 @@ set expandtab               " Write tabs as spaces
 set lazyredraw              " Don't redraw screen when executing macros
 set showmatch               " Show matching brackets
 set incsearch               " Start searching as you type
-set noerrorbells            " Turn off annoying bells
-
 syntax enable
-set background=light
+
+" GUI Settings
+
+if has("gui_running")
+    set vb t_vb=            " Disable error bells
+    set background=light
+else
+    set noeb vb t_vb=       " Disable error bells
+    set background=dark     
+endif
 
 " Key remaps
 
