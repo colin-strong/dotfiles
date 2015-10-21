@@ -1,6 +1,7 @@
 " Typical settings
     
 filetype plugin indent on   " Turn on other plugins
+set autochdir               " Change pwd to that of the file being edited
 set nocompatible            " Set when vimrc is found; better safe than sorry.
 set tabstop=4               " Size of tab when reading files
 set softtabstop=4           " Size of tab when editing files
