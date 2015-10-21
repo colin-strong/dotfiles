@@ -9,17 +9,9 @@ set expandtab               " Write tabs as spaces
 set lazyredraw              " Don't redraw screen when executing macros
 set showmatch               " Show matching brackets
 set incsearch               " Start searching as you type
+set noeb vb t_vb=           " Disable error bells
+set background=dark         " For console vim, overriden in gvimrc
 syntax enable
-
-" GUI Settings
-
-if has("gui_running")
-    set vb t_vb=            " Disable error bells
-    set background=light
-else
-    set noeb vb t_vb=       " Disable error bells
-    set background=dark     
-endif
 
 " Key remaps
 
