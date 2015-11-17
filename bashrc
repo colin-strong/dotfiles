@@ -44,7 +44,7 @@ if [ ${UID} -eq 0 ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[${USER_COLOR}\]\u@\h:\[\e[m\]\[\e[1;34m\]\w\[\e[0;32m\]\[\e[${USER_COLOR}\]\$\[\e[m\] \[\e[m\]\[\e[m\]'
+    PS1='\[\e[${USER_COLOR}\]\u@\h:\[\e[m\]\[\e[0;34m\]\w\[\e[0;32m\]\[\e[${USER_COLOR}\]\$\[\e[m\] \[\e[m\]\[\e[m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

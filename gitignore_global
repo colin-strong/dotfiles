@@ -39,3 +39,9 @@ Thumbs.db
 
 *.swp
 *.swo
+
+# LaTeX files #
+###############
+*.aux
+*.dvi
+*.pdf
