@@ -1,0 +1,4 @@
+alias ll="ls -al --color=auto"
+alias la="ls -a --color=auto"
+alias ..="cd .."
+alias ping="ping -c 5"
