@@ -335,7 +335,33 @@
         <command>thunar</command>
       </action>
     </keybind>
-   <!-- A bit of tiling -->
+    <keybind key="W-m">
+      <action name="Execute">
+        <command>foobar2000</command>
+      </action>
+    </keybind>
+    <!-- Global hotkeys workaround for foobar2000 -->
+    <keybind key="C-A-Next">
+      <action name="Execute">
+          <command>wine /home/colin/.wine/drive_c/Program\ Files/foobar2000/foobar2000.exe /next</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-Prior">
+      <action name="Execute">
+          <command>wine /home/colin/.wine/drive_c/Program\ Files/foobar2000/foobar2000.exe /prev</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-Home">
+      <action name="Execute">
+          <command>wine /home/colin/.wine/drive_c/Program\ Files/foobar2000/foobar2000.exe /playpause</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-End">
+      <action name="Execute">
+          <command>wine /home/colin/.wine/drive_c/Program\ Files/foobar2000/foobar2000.exe /stop</command>
+      </action>
+    </keybind>
+    <!-- A bit of tiling -->
     <keybind key="W-Right">
       <action name="GrowToEdgeEast"/>
     </keybind>
