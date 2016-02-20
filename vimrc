@@ -13,6 +13,7 @@ set incsearch               " Start searching as you type
 set noeb vb t_vb=           " Disable error bells
 set background=dark         " For console vim, overriden in gvimrc
 syntax enable
+colorscheme solarized
 
 " Key remaps
 
