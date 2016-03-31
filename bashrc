@@ -101,3 +101,8 @@ export DRIVE_C=$HOME/.wine/drive_c
 # Sends a file or folder to the trash. rm is aliased to this function
 # send_to_trash() { mv $1 $TRASH; }
 # delete_now() { rm -I $1; }
+
+# Disable system bell in Xorg
+if [ -n "$DISPLAY" ]; then
+    xset b off
+fi
