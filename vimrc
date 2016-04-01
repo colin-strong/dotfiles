@@ -14,6 +14,8 @@ set incsearch               " Start searching as you type
 set nohlsearch              " Turns off search highlighting
 set noeb vb t_vb=           " Disable error bells
 set background=dark         " For console vim, overriden in gvimrc
+set noignorecase            " Case-sensitive search
+
 syntax enable
 colorscheme solarized
 
