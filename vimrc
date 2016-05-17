@@ -15,6 +15,8 @@ set nohlsearch              " Turns off search highlighting
 set noeb vb t_vb=           " Disable error bells
 set background=dark         " For console vim, overriden in gvimrc
 set noignorecase            " Case-sensitive search
+set number                  " Show line numbers
+set relativenumber          " Show line numbers relative to current line
 
 syntax enable
 colorscheme solarized
