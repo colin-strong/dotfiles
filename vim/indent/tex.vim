@@ -259,4 +259,3 @@ function GetTeXIndent()
     return ind
 endfunction
 
-" vim: set sw=4 textwidth=78:

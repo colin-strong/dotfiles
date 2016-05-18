@@ -20,6 +20,7 @@ set relativenumber          " Show line numbers relative to current line
 
 syntax enable
 colorscheme solarized
+let g:tex_flavor='latex'
 
 " Key remaps
 
