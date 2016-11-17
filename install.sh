@@ -10,3 +10,6 @@ do
     rm ~/.$file
     ln -sv $PWD/$file ~/.$file
 done
+
+# Reload bash
+exec "$BASH"
