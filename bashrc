@@ -83,7 +83,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Enable the python startup file at ~/.pystartup
-export PYTHONSTARTUP=/home/colin/.pystartup
+export PYTHONSTARTUP=$HOME/.pystartup
 
 # Set my default text editor
 export EDITOR=vim
