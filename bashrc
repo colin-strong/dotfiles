@@ -69,6 +69,11 @@ if [ -f ~/.bash-aliases ]; then
     . ~/.bash-aliases
 fi
 
+# Set local configuration (not version controlled)
+if [ -f ~/.local_bashrc ]; then
+    . ~/.local_bashrc
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
