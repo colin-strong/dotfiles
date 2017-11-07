@@ -50,3 +50,7 @@ Thumbs.db
 *.pdf
 *.bbl
 *.blg
+
+# Python files #
+################
+*.pyc
