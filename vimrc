@@ -19,6 +19,7 @@ set number                  " Show line numbers
 
 syntax enable
 colorscheme solarized
+let g:solarized_termcolors = 256
 let g:tex_flavor='latex'
 
 " Key remaps
