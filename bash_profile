@@ -1,1 +1,2 @@
-case himBH in *i*) . ~/.bashrc;; esac
+. ~/.profile
+. ~/.bashrc

@@ -111,3 +111,7 @@ export DRIVE_C=$HOME/.wine/drive_c
 if [ -n "$DISPLAY" ]; then
     xset b off
 fi
+
+# enable better globbing
+shopt -s globstar
+shopt -s extglob

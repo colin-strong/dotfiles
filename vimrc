@@ -13,7 +13,6 @@ set showmatch               " Show matching brackets
 set incsearch               " Start searching as you type
 set nohlsearch              " Turns off search highlighting
 set noeb vb t_vb=           " Disable error bells
-set background=dark         " For console vim, overriden in gvimrc
 set noignorecase            " Case-sensitive search
 set number                  " Show line numbers
 
@@ -21,6 +20,10 @@ syntax enable
 colorscheme solarized
 let g:solarized_termcolors = 256
 let g:tex_flavor='latex'
+set background=dark        " For console vim, overriden in gvimrc
+
+" Set syntax highlighting for filetypes
+au BufNewFile,BufRead *.ts set filetype=javascript
 
 " Key remaps
 
