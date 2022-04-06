@@ -1,8 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
-
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -44,5 +41,4 @@ bind 'set bell-style none'
 # enable better globbing
 shopt -s globstar
 shopt -s extglob
-
 

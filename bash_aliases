@@ -1,4 +1,4 @@
-alias ls="ls -Gp"
-alias ll="ls -al"
+alias ls="ls -p"
+alias ll="ls -ahl"
 alias la="ls -a"
 alias ..="cd .."
