@@ -20,7 +20,7 @@ syntax enable
 colorscheme solarized
 let g:solarized_termcolors = 256
 let g:tex_flavor='latex'
-set background=dark        " For console vim, overriden in gvimrc
+set background=light        " For console vim, overriden in gvimrc
 
 " Set syntax highlighting for filetypes
 au BufNewFile,BufRead *.ts set filetype=javascript
