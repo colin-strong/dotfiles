@@ -3,9 +3,9 @@
 filetype plugin indent on   " Turn on other plugins
 set autochdir               " Change pwd to that of the file being edited
 set nocompatible            " Set when vimrc is found; better safe than sorry.
-set tabstop=4               " Size of tab when reading files
-set softtabstop=4           " Size of tab when editing files
-set shiftwidth=4            " Size of indent
+set tabstop=2               " Size of tab when reading files
+set softtabstop=2           " Size of tab when editing files
+set shiftwidth=2            " Size of indent
 set textwidth=79            " Hard line wrap at 79 columns
 set expandtab               " Write tabs as spaces
 set lazyredraw              " Don't redraw screen when executing macros

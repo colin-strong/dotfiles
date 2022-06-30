@@ -26,15 +26,14 @@ if [ ${UID} -eq 0 ]; then
     USER_COLOR='0;31m'
 fi
 
-PS1='\[\e[${USER_COLOR}\]\u\[\e[0;30m\]@\[\e[0;30m\]\h\[\e[0m\]$ \[\e[0m\]'
+PS1='\[\e[${USER_COLOR}\]\u\[\e[0;30m\]@\[\e[0;30m\]\h\[\e[0m\]:\[\e[0;38;5;16m\]\W\[\e[0m\]$ \[\e[0m\]'
 
-if [ -f ~/.bash-aliases ]; then
-    . ~/.bash-aliases
+if [ -f ~/.custom_functions ]; then
+    . ~/.custom_functions
 fi
 
-# Set local configuration (not version controlled)
-if [ -f ~/.local_bashrc ]; then
-    . ~/.local_bashrc
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
 
 # enable color support of ls and also add handy aliases
@@ -67,3 +66,4 @@ shopt -s extglob
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+

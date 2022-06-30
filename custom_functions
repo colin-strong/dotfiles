@@ -1,0 +1,19 @@
+#!/bin/bash
+
+squash_commits() {
+  num_commits_to_squash=$1
+  minus_one=$(($num_commits_to_squash-1))
+  message=$(git log -1 --skip ${minus_one} --pretty=%B | xargs)
+
+  git reset --soft HEAD~${num_commits_to_squash}
+  git commit -m "${message}"
+  git push --force
+}
+
+git_nuke() {
+  git restore --staged .
+  git checkout --  .
+  git clean -fd
+  git status
+}
+
