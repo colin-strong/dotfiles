@@ -115,3 +115,5 @@ fi
 # enable better globbing
 shopt -s globstar
 shopt -s extglob
+bind 'set bell-style none'
+
