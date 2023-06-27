@@ -1,4 +1,0 @@
-Host csil-git1.cs.surrey.sfu.ca
-    Hostname csil-git1.cs.surrey.sfu.ca
-    IdentityFile ~/.ssh/id_rsa_sfu
-    IdentitiesOnly yes

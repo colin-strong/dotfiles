@@ -13,3 +13,4 @@ done
 
 # Reload bash
 exec "$BASH"
+

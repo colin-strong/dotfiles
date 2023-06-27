@@ -12,9 +12,16 @@ shopt -s checkwinsize
 
 if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
+fi
 
-if [ -f ~/.bash-aliases ]; then
-    . ~/.bash-aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# Set local configuration (not version controlled)
+if [ -f ~/.local_bashrc ]; then
+    . ~/.local_bashrc
+fi
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

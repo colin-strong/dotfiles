@@ -1,0 +1,50 @@
+# ~/.local_bashrc
+
+if [[ -f /opt/dev/dev.sh ]]; then source /opt/dev/dev.sh; fi
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+export PATH="/usr/local/share/chruby:$PATH"
+
+# enable tab completion for git
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+## FUNCTIONS
+
+listening() {
+  if [ $# -eq 0 ]; then
+      sudo lsof -iTCP -sTCP:LISTEN -n -P
+  elif [ $# -eq 1 ]; then
+      sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+  else
+      echo "Usage: listening [pattern]"
+  fi
+}
+
+squash_commits() {
+  num_commits_to_squash=$1
+  minus_one=$(($num_commits_to_squash-1))
+  message=$(git log -1 --skip ${minus_one} --pretty=%B | xargs)
+
+  git reset --soft HEAD~${num_commits_to_squash}
+  git commit -m "${message}"
+  git push --force
+}
+
+git_nuke() {
+  git restore --staged .
+  git checkout --  .
+  git clean -fd
+  git status
+}
+
+git_clean_branches() {
+  git fetch -p
+  git branch -vv | awk '{print $1,$4}' | grep 'gone]' | awk '{print $1}' | xargs git branch -D
+}
+
+## ALIASES
+alias br="bin/rails"
+
