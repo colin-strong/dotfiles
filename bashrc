@@ -19,8 +19,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Set local configuration (not version controlled)
-if [ -f ~/.local_bashrc ]; then
-    . ~/.local_bashrc
+if [ -f ~/.local/bashrc ]; then
+    . ~/.local/bashrc
 fi
 
 # enable color support of ls and also add handy aliases
