@@ -54,3 +54,6 @@ Thumbs.db
 # Python files #
 ################
 *.pyc
+
+.idea/*
+
